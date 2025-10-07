@@ -3,7 +3,11 @@
  * Template Name: Elementor Canvas
  * Template Post Type: page, post
  *
+ * A blank canvas template for Elementor.
+ * No header, no footer - complete creative freedom.
+ *
  * @package Bolt_Theme
+ * @version 1.0.0
  */
 ?>
 <!DOCTYPE html>

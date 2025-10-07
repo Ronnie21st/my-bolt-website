@@ -1,9 +1,9 @@
 /*
 Theme Name: Bolt Modern Theme
-Theme URI: https://example.com/bolt-modern-theme
-Author: Bolt Design
-Author URI: https://example.com
-Description: A modern, fully responsive WordPress theme with complete Elementor compatibility. Features beautiful animations, smooth scrolling, and a sophisticated design with forest green and gold accents. Perfect for creative agencies, portfolios, and businesses. All animations and responsive behavior work 100% immediately after installation.
+Theme URI: https://bolt-theme.com
+Author: Bolt Design Team
+Author URI: https://bolt-theme.com
+Description: A modern, fully responsive WordPress theme with complete Elementor compatibility, beautiful animations, and smooth scrolling. Features forest green and gold accents, perfect for creative agencies, portfolios, and businesses. All animations and responsive behavior work 100% immediately after installation. Includes compiled TailwindCSS, all assets properly linked, and works perfectly out of the box.
 Version: 1.0.0
 Requires at least: 5.8
 Tested up to: 6.4
@@ -11,33 +11,33 @@ Requires PHP: 7.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: bolt-theme
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, elementor, one-column, two-columns, right-sidebar, left-sidebar, custom-colors, custom-header, flexible-header, accessibility-ready, block-styles, wide-blocks, full-width-template
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, elementor, one-column, two-columns, full-width-template, blog, portfolio, responsive-layout, accessibility-ready
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Bolt Modern Theme, Copyright 2024
+Bolt Modern Theme is distributed under the terms of the GNU GPL.
 */
 
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
 
-/* ==========================================
-   BASE STYLES
-   ========================================== */
-
+/* Reset and Base Styles */
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
   font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background-color: #faf8f5;
   color: #19372b;
   line-height: 1.625;
@@ -45,262 +45,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ==========================================
-   RESPONSIVE CONTAINER
-   ========================================== */
-
-.bolt-container {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-@media (min-width: 640px) {
-  .bolt-container {
-    padding: 0 2rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .bolt-container {
-    padding: 0 3rem;
-  }
-}
-
-.bolt-container-wide {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-@media (min-width: 640px) {
-  .bolt-container-wide {
-    padding: 0 2rem;
-  }
-}
-
-/* ==========================================
-   RESPONSIVE MEDIA
-   ========================================== */
-
-img,
-video,
-iframe,
-embed,
-object {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-iframe {
-  border: 0;
-}
-
-/* ==========================================
-   TYPOGRAPHY
-   ========================================== */
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  color: #19372b;
-}
-
-h1 { font-size: clamp(2rem, 5vw, 3rem); }
-h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
-h4 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
-h5 { font-size: clamp(1.125rem, 2vw, 1.5rem); }
-h6 { font-size: clamp(1rem, 1.5vw, 1.25rem); }
-
-@media (max-width: 768px) {
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.75rem; }
-  h3 { font-size: 1.5rem; }
-  h4 { font-size: 1.25rem; }
-}
-
-p {
-  margin-bottom: 1rem;
-  line-height: 1.75;
-}
-
-a {
-  color: #2d674d;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover,
-a:focus {
-  color: #eca53f;
-  outline: none;
-}
-
-strong,
-b {
-  font-weight: 600;
-}
-
-em,
-i {
-  font-style: italic;
-}
-
-/* ==========================================
-   BUTTONS
-   ========================================== */
-
-.btn,
-button.btn,
-input[type="submit"].btn,
-input[type="button"].btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  text-decoration: none;
-}
-
-.btn-primary {
-  background-color: #2d674d;
-  color: #fff;
-  border-color: #2d674d;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #24523f;
-  color: #fff;
-  transform: scale(1.05);
-}
-
-.btn-secondary {
-  background-color: transparent;
-  color: #2d674d;
-  border-color: #2d674d;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background-color: #2d674d;
-  color: #fff;
-  transform: scale(1.05);
-}
-
-.btn-gold {
-  background-color: #eca53f;
-  color: #19372b;
-  border-color: #eca53f;
-}
-
-.btn-gold:hover,
-.btn-gold:focus {
-  background-color: #dc8a28;
-  color: #19372b;
-  transform: scale(1.05);
-}
-
-.btn-lg {
-  padding: 1rem 2rem;
-  font-size: 1.125rem;
-}
-
-.btn-sm {
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-}
-
-/* ==========================================
-   RESPONSIVE GRID
-   ========================================== */
-
-.grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
-}
-
-@media (min-width: 640px) {
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 768px) {
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .grid-cols-5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-/* Mobile Responsive Stacking */
-@media (max-width: 768px) {
-  .grid,
-  .grid-cols-2,
-  .grid-cols-3,
-  .grid-cols-4,
-  .grid-cols-5 {
-    grid-template-columns: 1fr !important;
-  }
-
-  .hide-mobile {
-    display: none !important;
-  }
-
-  .stack-mobile {
-    flex-direction: column !important;
-  }
-}
-
-@media (max-width: 1024px) {
-  .hide-tablet {
-    display: none !important;
-  }
-}
-
-/* ==========================================
-   ELEMENTOR COMPATIBILITY
-   ========================================== */
-
-.elementor-widget-wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.elementor-element {
-  position: relative;
-}
-
-.elementor *,
-.elementor *::before,
-.elementor *::after {
-  box-sizing: border-box;
-}
-
-/* ==========================================
-   WORDPRESS CORE STYLES
-   ========================================== */
-
+/* WordPress Core Alignment Classes */
 .alignleft {
   float: left;
   margin-right: 1.5rem;
@@ -336,6 +81,7 @@ input[type="button"].btn {
   margin-right: -50vw;
 }
 
+/* WordPress Caption */
 .wp-caption {
   max-width: 100%;
   margin-bottom: 1.5rem;
@@ -352,25 +98,6 @@ input[type="button"].btn {
   color: #666;
   margin-top: 0.5rem;
   font-style: italic;
-}
-
-.sticky {
-  display: block;
-}
-
-.bypostauthor {
-  display: block;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.gallery-item {
-  margin: 0;
 }
 
 /* Screen Reader Text */
@@ -402,14 +129,6 @@ input[type="button"].btn {
   text-decoration: none;
 }
 
-/* Clearfix */
-.clearfix::after,
-.clear::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* Skip Link */
 .skip-link {
   position: absolute;
@@ -426,36 +145,52 @@ input[type="button"].btn {
   top: 0;
 }
 
-/* ==========================================
-   UTILITY CLASSES
-   ========================================== */
+/* Clearfix */
+.clearfix::after,
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
 
-.mb-0 { margin-bottom: 0; }
-.mb-1 { margin-bottom: 0.5rem; }
-.mb-2 { margin-bottom: 1rem; }
-.mb-3 { margin-bottom: 1.5rem; }
-.mb-4 { margin-bottom: 2rem; }
+.gallery-item {
+  margin: 0;
+}
 
-.mt-0 { margin-top: 0; }
-.mt-1 { margin-top: 0.5rem; }
-.mt-2 { margin-top: 1rem; }
-.mt-3 { margin-top: 1.5rem; }
-.mt-4 { margin-top: 2rem; }
+/* Responsive Media */
+img,
+video,
+iframe,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
-.p-0 { padding: 0; }
-.p-1 { padding: 0.5rem; }
-.p-2 { padding: 1rem; }
-.p-3 { padding: 1.5rem; }
-.p-4 { padding: 2rem; }
+iframe {
+  border: 0;
+}
 
-/* ==========================================
-   ACCESSIBLE FOCUS STYLES
-   ========================================== */
+/* Sticky Post */
+.sticky {
+  display: block;
+}
 
+/* Post Author */
+.bypostauthor {
+  display: block;
+}
+
+/* Focus Styles for Accessibility */
 :focus {
   outline: 2px solid #eca53f;
   outline-offset: 2px;
@@ -468,4 +203,15 @@ input[type="button"].btn {
 :focus-visible {
   outline: 2px solid #eca53f;
   outline-offset: 2px;
+}
+
+/* Site Container */
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-main {
+  flex: 1;
 }

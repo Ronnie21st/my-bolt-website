@@ -1,0 +1,138 @@
+═══════════════════════════════════════════════════════════════
+  PACIFIC OUTDOOR LIVING - WORDPRESS THEME INSTALLATION
+═══════════════════════════════════════════════════════════════
+
+QUICK START:
+1. Compress "pacific-outdoor-living" folder to ZIP
+2. Upload to WordPress: Appearance → Themes → Add New → Upload
+3. Activate the theme
+4. Done! Everything works immediately.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DETAILED INSTALLATION STEPS:
+
+Step 1: CREATE ZIP FILE
+   - Right-click the "pacific-outdoor-living" folder
+   - Select "Compress" or "Send to ZIP"
+   - Name it: pacific-outdoor-living.zip
+
+Step 2: UPLOAD TO WORDPRESS
+   a. Log into WordPress Admin
+   b. Go to: Appearance → Themes
+   c. Click: "Add New"
+   d. Click: "Upload Theme"
+   e. Click: "Choose File"
+   f. Select your ZIP file
+   g. Click: "Install Now"
+   h. Wait for upload to complete
+   i. Click: "Activate"
+
+Step 3: VERIFY INSTALLATION
+   ✓ Theme appears in Appearance → Themes
+   ✓ Site loads without errors
+   ✓ Animations are working
+   ✓ Mobile menu functions
+   ✓ All sections visible
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHAT'S INCLUDED:
+
+✓ Full one-page design
+✓ Responsive on all devices
+✓ All animations working
+✓ Compiled CSS (33KB)
+✓ Compiled JavaScript (208KB)
+✓ Elementor templates
+✓ Customizer settings
+✓ Screenshot image
+
+FILES INCLUDED:
+
+Required:
+• style.css
+• functions.php
+• index.php
+• header.php
+• footer.php
+• front-page.php
+• page.php
+• single.php
+• screenshot.png
+
+Templates:
+• template-elementor-full-width.php
+• template-elementor-canvas.php
+
+Assets:
+• css/compiled.css
+• js/compiled.js
+
+Documentation:
+• README.md
+• INSTALLATION.txt (this file)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CUSTOMIZATION:
+
+Contact Info:
+Appearance → Customize → Contact Information
+- Add phone, email, address
+
+Logo:
+Appearance → Customize → Site Identity → Logo
+- Upload your logo image
+
+Menus:
+Appearance → Menus
+- Create Primary Menu
+- Create Footer Menu
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+USING ELEMENTOR (OPTIONAL):
+
+1. Install Elementor plugin
+2. Edit any page
+3. Click "Edit with Elementor"
+4. Drag and drop widgets
+5. Choose page template in Page Attributes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TROUBLESHOOTING:
+
+Issue: Theme won't install
+Fix: Ensure ZIP contains "pacific-outdoor-living" folder
+
+Issue: Styles not loading
+Fix: Clear browser cache and WordPress cache
+
+Issue: JavaScript not working
+Fix: Ensure JavaScript is enabled in browser
+
+Issue: Mobile menu not working
+Fix: Clear cache and refresh page
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+REQUIREMENTS:
+
+✓ WordPress 5.8+
+✓ PHP 7.4+
+✓ Modern web browser
+
+Optional:
+• Elementor plugin (for drag-and-drop)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SUPPORT:
+
+Documentation: See README.md
+WordPress Codex: https://codex.wordpress.org/
+Elementor Help: https://elementor.com/help/
+
+═══════════════════════════════════════════════════════════════

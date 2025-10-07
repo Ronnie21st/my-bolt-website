@@ -1,0 +1,250 @@
+/*
+Theme Name: Pacific Outdoor Living
+Theme URI: https://pacificoutdoorliving.com
+Author: Pacific Design Team
+Author URI: https://pacificoutdoorliving.com
+Description: A modern, fully responsive one-page WordPress theme for outdoor living and landscaping businesses. Features smooth scrolling, beautiful animations, and complete Elementor compatibility. Includes compiled TailwindCSS and works immediately after activation.
+Version: 1.0.0
+Requires at least: 5.8
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pacific-outdoor
+Tags: one-column, custom-colors, custom-logo, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, portfolio, photography
+
+Pacific Outdoor Living, Copyright 2024
+Pacific Outdoor Living is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background-color: #faf8f5;
+  color: #19372b;
+  line-height: 1.625;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   WORDPRESS REQUIRED STYLES
+   ============================================ */
+
+.alignleft {
+  float: left;
+  margin: 0 1.5rem 1rem 0;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.alignwide {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignfull {
+  max-width: 100%;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.wp-caption {
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.wp-caption img {
+  display: block;
+  margin: 0 auto;
+}
+
+.wp-caption-text {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+.sticky {
+  display: block;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-item {
+  margin: 0;
+}
+
+.clearfix::after,
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ============================================
+   RESPONSIVE MEDIA
+   ============================================ */
+
+img,
+video,
+iframe,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+iframe {
+  border: 0;
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+:focus {
+  outline: 2px solid #eca53f;
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #eca53f;
+  outline-offset: 2px;
+}
+
+/* ============================================
+   SITE STRUCTURE
+   ============================================ */
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex: 1;
+}
+
+/* ============================================
+   SKIP LINK
+   ============================================ */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #f1f1f1;
+  color: #21759b;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100000;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 3rem;
+  }
+}

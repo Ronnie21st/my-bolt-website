@@ -1,0 +1,210 @@
+/**
+ * Navigation Styles - With animations from Bolt design
+ */
+
+.main-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 1.5rem 0;
+    background-color: transparent;
+}
+
+.main-navigation.scrolled {
+    background-color: #1e4233;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.site-logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.site-logo-link:hover,
+.site-logo-link:focus {
+    transform: scale(1.05);
+}
+
+.logo-icon {
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
+}
+
+.main-navigation.scrolled .logo-icon {
+    background-color: #eca53f;
+}
+
+.logo-icon svg {
+    width: 28px;
+    height: 28px;
+    color: white;
+    display: block;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+}
+
+.site-tagline {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #f1c065;
+    transition: color 0.3s ease;
+}
+
+.main-navigation.scrolled .site-tagline {
+    color: #eca53f;
+}
+
+/* Navigation Menu */
+.nav-menu-wrapper {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .nav-menu-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+.nav-menu-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-menu-wrapper li {
+    margin: 0;
+}
+
+.nav-menu-wrapper a {
+    display: block;
+    padding: 0.625rem 1.25rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+}
+
+.nav-menu-wrapper a:hover,
+.nav-menu-wrapper a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f1c065;
+    transform: scale(1.05);
+    border-color: rgba(236, 165, 63, 0.5);
+}
+
+.main-navigation.scrolled .nav-menu-wrapper a:hover,
+.main-navigation.scrolled .nav-menu-wrapper a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-toggle svg {
+    display: block;
+}
+
+/* Mobile Menu */
+@media (max-width: 1023px) {
+    .nav-menu-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(30, 66, 51, 0.95);
+        backdrop-filter: blur(12px);
+        padding: 1rem;
+        margin-top: 1rem;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .nav-menu-wrapper.active {
+        display: block;
+    }
+
+    .nav-menu-wrapper ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-menu-wrapper a {
+        background-color: rgba(255, 255, 255, 0.05);
+        width: 100%;
+        text-align: left;
+    }
+}

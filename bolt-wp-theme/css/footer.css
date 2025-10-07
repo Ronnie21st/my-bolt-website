@@ -1,0 +1,267 @@
+/**
+ * Footer Styles - With animations from Bolt design
+ */
+
+.site-footer {
+    position: relative;
+    background: linear-gradient(to bottom right, #19372b, #1e4233, #19372b);
+    color: white;
+    overflow: hidden;
+}
+
+.footer-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.footer-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    color: #faf8f5;
+}
+
+.footer-content {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-about {
+    grid-column: span 1;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo svg {
+    width: 40px;
+    height: 40px;
+    color: #eca53f;
+}
+
+.footer-site-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+
+.footer-description {
+    color: #d9ebe2;
+    line-height: 1.625;
+    margin-bottom: 1.5rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social .social-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.footer-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-menu li {
+    margin: 0;
+}
+
+.footer-menu a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #d9ebe2;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-menu a::before {
+    content: '›';
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus {
+    color: #f1c065;
+    transform: translateX(0.25rem);
+}
+
+.footer-menu a:hover::before {
+    transform: translateX(0.25rem);
+}
+
+.footer-contact {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: #d9ebe2;
+}
+
+.footer-contact svg {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-contact a {
+    color: #d9ebe2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus {
+    color: #f1c065;
+}
+
+.footer-contact li:hover svg {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+}
+
+.footer-copyright {
+    color: #d9ebe2;
+    font-size: 0.875rem;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+.footer-credits {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-legal-menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+}
+
+.footer-legal-menu li {
+    margin: 0;
+}
+
+.footer-legal-menu a {
+    color: #d9ebe2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-legal-menu a:hover,
+.footer-legal-menu a:focus {
+    color: #f1c065;
+}
+
+@media (max-width: 767px) {
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .footer-legal-menu {
+        justify-content: center;
+    }
+}

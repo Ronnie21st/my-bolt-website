@@ -96,9 +96,6 @@ function bolt_enqueue_scripts() {
     // Compiled CSS (includes all Tailwind styles)
     wp_enqueue_style( 'bolt-compiled', BOLT_THEME_URI . '/css/compiled.css', array( 'bolt-style' ), BOLT_VERSION, 'all' );
 
-    // Theme color overrides (MUST load after compiled.css to fix blue colors)
-    wp_enqueue_style( 'bolt-colors', BOLT_THEME_URI . '/css/theme-colors.css', array( 'bolt-compiled' ), BOLT_VERSION, 'all' );
-
     // Compiled JavaScript (includes all React components and functionality)
     wp_enqueue_script( 'bolt-compiled-js', BOLT_THEME_URI . '/js/compiled.js', array(), BOLT_VERSION, true );
 

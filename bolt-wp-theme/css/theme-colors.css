@@ -361,3 +361,41 @@ h2.text-blue-700,
     --gold-400: #f1c065;
     --gold-500: #eca53f;
 }
+
+/* ============================================
+   NUCLEAR OPTION - Override ALL inline blue styles
+   ============================================ */
+
+/* Target every single element with inline blue text */
+[style*="color: rgb(37, 99, 235)"] *,
+[style*="color: rgb(29, 78, 216)"] *,
+[style*="color:rgb(37, 99, 235)"] *,
+[style*="color:rgb(29, 78, 216)"] *,
+[style*="color:rgb(37,99,235)"] *,
+[style*="color:rgb(29,78,216)"] * {
+    color: #ffffff !important;
+}
+
+/* Target direct blue text elements */
+h1[style*="color: rgb(37"],
+h1[style*="color: rgb(29"],
+h2[style*="color: rgb(37"],
+h2[style*="color: rgb(29"],
+span[style*="color: rgb(37"],
+span[style*="color: rgb(29"],
+div[style*="color: rgb(37"],
+div[style*="color: rgb(29"] {
+    color: #ffffff !important;
+}
+
+/* Elementor inline styles */
+.elementor-widget-heading [style*="color:"],
+.elementor-heading-title[style*="color:"] {
+    color: #ffffff !important;
+}
+
+/* Any h1 with className containing blue */
+h1[class*="blue"],
+h2[class*="blue"] {
+    color: #ffffff !important;
+}

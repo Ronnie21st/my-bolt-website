@@ -101,6 +101,16 @@ function pacific_enqueue_scripts() {
         );
     }
 
+    // Theme color overrides (must load after compiled.css)
+    if ( file_exists( get_template_directory() . '/css/theme-colors.css' ) ) {
+        wp_enqueue_style(
+            'pacific-colors',
+            get_template_directory_uri() . '/css/theme-colors.css',
+            array( 'pacific-compiled' ),
+            PACIFIC_VERSION
+        );
+    }
+
     // Compiled JavaScript (includes React components)
     if ( file_exists( get_template_directory() . '/js/compiled.js' ) ) {
         wp_enqueue_script(

@@ -1,0 +1,122 @@
+/**
+ * Pacific Outdoor Living - Color Override
+ * Forces correct green and gold theme colors
+ */
+
+/* Override blue colors with forest green */
+.bg-blue-600,
+.bg-blue-700,
+.bg-blue-800,
+.bg-blue-900,
+[style*="background-color: rgb(37, 99, 235)"],
+[style*="background-color: rgb(29, 78, 216)"],
+[style*="background: rgb(37, 99, 235)"],
+[style*="background: rgb(29, 78, 216)"] {
+    background-color: #2d674d !important;
+    background: #2d674d !important;
+}
+
+/* Text colors */
+.text-blue-600,
+.text-blue-700,
+.text-blue-800,
+.text-blue-900,
+[style*="color: rgb(37, 99, 235)"],
+[style*="color: rgb(29, 78, 216)"] {
+    color: #2d674d !important;
+}
+
+/* Border colors */
+.border-blue-600,
+.border-blue-700,
+[style*="border-color: rgb(37, 99, 235)"] {
+    border-color: #2d674d !important;
+}
+
+/* Navigation and buttons - force forest green */
+nav,
+.main-navigation,
+button,
+.btn,
+a.btn,
+[role="button"] {
+    background-color: #2d674d !important;
+}
+
+/* Hero section background */
+.hero,
+[id*="hero"],
+[class*="hero"] {
+    background: linear-gradient(to bottom right, #19372b, #2d674d) !important;
+}
+
+/* Hover states - gold accent */
+button:hover,
+.btn:hover,
+a:hover,
+nav a:hover {
+    background-color: #eca53f !important;
+    color: #19372b !important;
+}
+
+/* Primary color override */
+:root {
+    --color-primary: #2d674d;
+    --color-primary-dark: #19372b;
+    --color-accent: #eca53f;
+    --color-forest: #2d674d;
+    --color-forest-dark: #19372b;
+    --color-gold: #eca53f;
+}
+
+/* React root styling */
+#root {
+    --primary-color: #2d674d;
+    --primary-dark: #19372b;
+    --accent-color: #eca53f;
+}
+
+/* Force specific sections */
+header,
+nav,
+.navigation,
+.site-header {
+    background-color: #1e4233 !important;
+}
+
+/* Stats bar */
+.stats-bar,
+[class*="stats"] {
+    background-color: #19372b !important;
+}
+
+/* Footer */
+footer,
+.site-footer {
+    background: linear-gradient(to bottom right, #19372b, #1e4233, #19372b) !important;
+}
+
+/* All sections with blue backgrounds */
+section[style*="background"],
+div[style*="background"] {
+    background-color: #faf8f5 !important;
+}
+
+/* Specific component overrides */
+.bg-gradient-to-br {
+    background: linear-gradient(to bottom right, #19372b, #2d674d) !important;
+}
+
+/* Button primary */
+.bg-forest-700,
+.bg-forest-800 {
+    background-color: #2d674d !important;
+}
+
+/* Gold accents */
+.text-gold-400,
+.text-gold-500,
+.bg-gold-500 {
+    background-color: #eca53f !important;
+    color: #eca53f !important;
+}

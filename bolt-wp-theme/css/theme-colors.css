@@ -1,9 +1,9 @@
 /**
- * Pacific Outdoor Living - Color Override
- * Forces correct green and gold theme colors
+ * Pacific Outdoor Living - Balanced Color Scheme
+ * Forest Green and Gold with proper text contrast
  */
 
-/* Override blue colors with forest green */
+/* Override blue backgrounds with forest green */
 .bg-blue-600,
 .bg-blue-700,
 .bg-blue-800,
@@ -16,14 +16,18 @@
     background: #2d674d !important;
 }
 
-/* Text colors */
+/* CRITICAL FIX: Blue text becomes WHITE for readability on dark backgrounds */
 .text-blue-600,
 .text-blue-700,
 .text-blue-800,
 .text-blue-900,
+h1.text-blue-600,
+h1.text-blue-700,
+h2.text-blue-600,
+h2.text-blue-700,
 [style*="color: rgb(37, 99, 235)"],
 [style*="color: rgb(29, 78, 216)"] {
-    color: #2d674d !important;
+    color: #ffffff !important;
 }
 
 /* Border colors */
@@ -33,14 +37,25 @@
     border-color: #2d674d !important;
 }
 
-/* Navigation and buttons - force forest green */
+/* Navigation - dark green with white text */
 nav,
-.main-navigation,
+.main-navigation {
+    background-color: #1e4233 !important;
+}
+
+nav a,
+nav span,
+.main-navigation a {
+    color: #ffffff !important;
+}
+
+/* Buttons - gold primary */
 button,
 .btn,
 a.btn,
 [role="button"] {
-    background-color: #2d674d !important;
+    background-color: #eca53f !important;
+    color: #19372b !important;
 }
 
 /* Hero section background */
@@ -48,6 +63,16 @@ a.btn,
 [id*="hero"],
 [class*="hero"] {
     background: linear-gradient(to bottom right, #19372b, #2d674d) !important;
+}
+
+/* Hero section text - MUST be white for readability */
+.hero h1,
+.hero h2,
+.hero h3,
+.hero p,
+.hero span,
+.hero div {
+    color: #ffffff !important;
 }
 
 /* Hover states - gold accent */
@@ -84,16 +109,36 @@ nav,
     background-color: #1e4233 !important;
 }
 
-/* Stats bar */
+/* Stats bar - dark with white text */
 .stats-bar,
 [class*="stats"] {
     background-color: #19372b !important;
 }
 
-/* Footer */
+.stats-bar *,
+[class*="stats"] * {
+    color: #ffffff !important;
+}
+
+/* Footer - dark with white text */
 footer,
 .site-footer {
     background: linear-gradient(to bottom right, #19372b, #1e4233, #19372b) !important;
+}
+
+footer *,
+.site-footer * {
+    color: #ffffff !important;
+}
+
+footer a,
+.site-footer a {
+    color: #eca53f !important;
+}
+
+footer a:hover,
+.site-footer a:hover {
+    color: #ffffff !important;
 }
 
 /* All sections with blue backgrounds */
@@ -115,8 +160,34 @@ div[style*="background"] {
 
 /* Gold accents */
 .text-gold-400,
-.text-gold-500,
+.text-gold-500 {
+    color: #eca53f !important;
+}
+
 .bg-gold-500 {
     background-color: #eca53f !important;
-    color: #eca53f !important;
+}
+
+/* ============================================
+   BODY TEXT - Proper contrast everywhere
+   ============================================ */
+body {
+    color: #333333 !important;
+}
+
+/* Section headings on light backgrounds */
+section h1,
+section h2,
+section h3,
+section h4 {
+    color: #19372b !important;
+}
+
+/* Ensure white sections stay white */
+section:not([class*="hero"]):not([class*="stats"]) {
+    background-color: #ffffff !important;
+}
+
+section:nth-child(even):not([class*="hero"]):not([class*="stats"]) {
+    background-color: #faf8f5 !important;
 }

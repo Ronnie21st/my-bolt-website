@@ -102,6 +102,9 @@ function bolt_enqueue_scripts() {
     // Compiled JavaScript (includes all React components and functionality)
     wp_enqueue_script( 'bolt-compiled-js', BOLT_THEME_URI . '/js/compiled.js', array(), BOLT_VERSION, true );
 
+    // Color fix script (MUST load after compiled.js to override blue colors)
+    wp_enqueue_script( 'bolt-color-fix', BOLT_THEME_URI . '/js/color-fix.js', array( 'bolt-compiled-js' ), BOLT_VERSION, true );
+
     // Comment reply script
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );

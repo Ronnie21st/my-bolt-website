@@ -1,297 +1,13 @@
 /**
- * Pacific Outdoor Living - Exact Color Match
- * Matches the original Bolt.new site colors EXACTLY
+ * Pacific Outdoor Living - Color Override
+ * Forces correct green and gold theme colors
  */
 
-/* ============================================
-   NAVIGATION - Forest 800 (#1e4233)
-   ============================================ */
-header,
-nav,
-.main-navigation,
-.site-header,
-.navigation {
-    background-color: #1e4233 !important;
-}
-
-/* When scrolled, nav stays forest-800 */
-nav.scrolled,
-header.scrolled {
-    background-color: #1e4233 !important;
-}
-
-/* Nav links - white text */
-nav a,
-nav span,
-.main-navigation a,
-.site-header a,
-.menu a {
-    color: #ffffff !important;
-}
-
-/* Nav hover - gold 400 */
-nav a:hover,
-.main-navigation a:hover,
-.menu a:hover {
-    color: #f1c065 !important;
-}
-
-/* Get Started button in nav */
-nav button,
-nav .btn,
-.navigation button {
-    background-color: #eca53f !important;
-    color: #19372b !important;
-    border-color: #eca53f !important;
-}
-
-nav button:hover,
-nav .btn:hover {
-    background-color: #f1c065 !important;
-}
-
-/* ============================================
-   HERO SECTION - Forest gradient
-   ============================================ */
-.hero,
-[id="hero"],
-[class*="hero"],
-section:first-of-type {
-    background: linear-gradient(135deg, #19372b 0%, #1e4233 50%, #2d674d 100%) !important;
-}
-
-/* All hero text MUST be white */
-.hero *,
-.hero h1,
-.hero h2,
-.hero h3,
-.hero p,
-.hero span,
-.hero div:not(.bg-gradient-to-r) {
-    color: #ffffff !important;
-}
-
-/* Override any blue text in hero */
-.hero .text-blue-600,
-.hero .text-blue-700,
-.hero [class*="text-blue"] {
-    color: #ffffff !important;
-}
-
-/* Gold gradient text in hero */
-.hero .bg-gradient-to-r,
-.hero [class*="bg-gradient"],
-.hero .text-transparent {
-    background: linear-gradient(90deg, #f6d89b 0%, #f1c065 50%, #e88e77 100%) !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-}
-
-/* ============================================
-   BUTTONS - Gold primary
-   ============================================ */
-button,
-.btn,
-a.btn,
-input[type="submit"],
-[role="button"],
-.wp-block-button__link {
-    background-color: #eca53f !important;
-    color: #19372b !important;
-    border-color: #eca53f !important;
-}
-
-button:hover,
-.btn:hover,
-a.btn:hover,
-input[type="submit"]:hover {
-    background-color: #f1c065 !important;
-    color: #19372b !important;
-}
-
-/* Secondary buttons - transparent with border */
-.btn-secondary,
-button.secondary,
-.wp-block-button.is-style-outline .wp-block-button__link {
-    background-color: rgba(255, 255, 255, 0.1) !important;
-    color: #ffffff !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
-}
-
-.btn-secondary:hover,
-button.secondary:hover {
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    border-color: #f1c065 !important;
-}
-
-/* ============================================
-   BODY SECTIONS - Light backgrounds
-   ============================================ */
-body {
-    background-color: #faf8f5 !important;
-    color: #19372b !important;
-}
-
-section {
-    background-color: #ffffff !important;
-}
-
-/* Alternating cream backgrounds */
-section:nth-child(even):not([class*="hero"]):not([class*="stats"]):not([class*="footer"]) {
-    background-color: #faf8f5 !important;
-}
-
-/* ============================================
-   STATS BAR - Forest 900 dark
-   ============================================ */
-.stats-bar,
-.stats,
-[id="stats"],
-[class*="stats"] {
-    background-color: #19372b !important;
-}
-
-.stats-bar *,
-.stats *,
-[id="stats"] *,
-[class*="stats"] * {
-    color: #ffffff !important;
-}
-
-.stats-bar .text-gold,
-.stats .text-gold,
-[class*="stats"] [class*="gold"] {
-    color: #eca53f !important;
-}
-
-/* ============================================
-   HEADINGS - Forest 900 on light
-   ============================================ */
-h1, h2, h3, h4, h5, h6 {
-    color: #19372b !important;
-}
-
-/* Exception: white headings on dark backgrounds */
-.hero h1,
-.hero h2,
-.hero h3,
-.stats-bar h1,
-.stats-bar h2,
-.stats-bar h3,
-footer h1,
-footer h2,
-footer h3,
-[style*="background-color: rgb(25, 55, 43)"] h1,
-[style*="background-color: rgb(25, 55, 43)"] h2,
-[style*="background-color: #19372b"] h1,
-[style*="background-color: #19372b"] h2 {
-    color: #ffffff !important;
-}
-
-/* ============================================
-   PARAGRAPHS - Proper contrast
-   ============================================ */
-p {
-    color: #19372b !important;
-}
-
-/* White text on dark sections */
-.hero p,
-.stats-bar p,
-footer p,
-[style*="background-color: rgb(25, 55, 43)"] p,
-[style*="background-color: #19372b"] p {
-    color: #ffffff !important;
-}
-
-/* ============================================
-   LINKS - Forest with gold hover
-   ============================================ */
-a {
-    color: #2d674d !important;
-}
-
-a:hover {
-    color: #eca53f !important;
-}
-
-/* Links in dark sections */
-.hero a,
-.stats-bar a,
-footer a {
-    color: #f1c065 !important;
-}
-
-.hero a:hover,
-.stats-bar a:hover,
-footer a:hover {
-    color: #ffffff !important;
-}
-
-/* ============================================
-   FOOTER - Dark forest gradient
-   ============================================ */
-footer,
-.site-footer,
-.footer {
-    background: linear-gradient(135deg, #19372b 0%, #1e4233 50%, #19372b 100%) !important;
-    color: #ffffff !important;
-}
-
-footer *,
-.site-footer * {
-    color: #ffffff !important;
-}
-
-footer a,
-.site-footer a {
-    color: #eca53f !important;
-}
-
-footer a:hover,
-.site-footer a:hover {
-    color: #ffffff !important;
-}
-
-/* ============================================
-   ACCENTS - Gold
-   ============================================ */
-.text-gold,
-.text-gold-400,
-.text-gold-500,
-[class*="text-gold"] {
-    color: #eca53f !important;
-}
-
-.bg-gold,
-.bg-gold-500,
-[class*="bg-gold"] {
-    background-color: #eca53f !important;
-}
-
-/* ============================================
-   BORDERS
-   ============================================ */
-.border,
-[class*="border-"] {
-    border-color: #ebe3d5 !important;
-}
-
-.border-gold {
-    border-color: #eca53f !important;
-}
-
-/* ============================================
-   OVERRIDE ALL BLUE COLORS
-   ============================================ */
-
-/* Blue backgrounds → Forest green */
+/* Override blue colors with forest green */
 .bg-blue-600,
 .bg-blue-700,
 .bg-blue-800,
 .bg-blue-900,
-[class*="bg-blue"],
 [style*="background-color: rgb(37, 99, 235)"],
 [style*="background-color: rgb(29, 78, 216)"],
 [style*="background: rgb(37, 99, 235)"],
@@ -300,102 +16,107 @@ footer a:hover,
     background: #2d674d !important;
 }
 
-/* Blue text → White (for readability on dark) */
+/* Text colors */
 .text-blue-600,
 .text-blue-700,
 .text-blue-800,
 .text-blue-900,
-[class*="text-blue"],
-h1.text-blue-600,
-h1.text-blue-700,
-h2.text-blue-600,
-h2.text-blue-700,
 [style*="color: rgb(37, 99, 235)"],
 [style*="color: rgb(29, 78, 216)"] {
-    color: #ffffff !important;
+    color: #2d674d !important;
 }
 
-/* Blue borders → Forest green */
+/* Border colors */
 .border-blue-600,
 .border-blue-700,
-[class*="border-blue"],
 [style*="border-color: rgb(37, 99, 235)"] {
     border-color: #2d674d !important;
 }
 
-/* ============================================
-   CSS VARIABLES
-   ============================================ */
+/* Navigation and buttons - force forest green */
+nav,
+.main-navigation,
+button,
+.btn,
+a.btn,
+[role="button"] {
+    background-color: #2d674d !important;
+}
+
+/* Hero section background */
+.hero,
+[id*="hero"],
+[class*="hero"] {
+    background: linear-gradient(to bottom right, #19372b, #2d674d) !important;
+}
+
+/* Hover states - gold accent */
+button:hover,
+.btn:hover,
+a:hover,
+nav a:hover {
+    background-color: #eca53f !important;
+    color: #19372b !important;
+}
+
+/* Primary color override */
 :root {
-    --color-forest-50: #f0f7f4;
-    --color-forest-100: #d9ebe2;
-    --color-forest-600: #2d674d;
-    --color-forest-700: #24523f;
-    --color-forest-800: #1e4233;
-    --color-forest-900: #19372b;
-
-    --color-gold-300: #f6d89b;
-    --color-gold-400: #f1c065;
-    --color-gold-500: #eca53f;
-    --color-gold-600: #dc8a28;
-
-    --color-sand-50: #faf8f5;
-    --color-sand-100: #f5f0e8;
-
-    --color-terracotta-400: #e88e77;
-
     --color-primary: #2d674d;
     --color-primary-dark: #19372b;
     --color-accent: #eca53f;
-    --color-background: #faf8f5;
-    --color-white: #ffffff;
+    --color-forest: #2d674d;
+    --color-forest-dark: #19372b;
+    --color-gold: #eca53f;
 }
 
-/* Apply to React root if exists */
+/* React root styling */
 #root {
     --primary-color: #2d674d;
     --primary-dark: #19372b;
     --accent-color: #eca53f;
-    --forest-800: #1e4233;
-    --forest-900: #19372b;
-    --gold-400: #f1c065;
-    --gold-500: #eca53f;
 }
 
-/* ============================================
-   NUCLEAR OPTION - Override ALL inline blue styles
-   ============================================ */
-
-/* Target every single element with inline blue text */
-[style*="color: rgb(37, 99, 235)"] *,
-[style*="color: rgb(29, 78, 216)"] *,
-[style*="color:rgb(37, 99, 235)"] *,
-[style*="color:rgb(29, 78, 216)"] *,
-[style*="color:rgb(37,99,235)"] *,
-[style*="color:rgb(29,78,216)"] * {
-    color: #ffffff !important;
+/* Force specific sections */
+header,
+nav,
+.navigation,
+.site-header {
+    background-color: #1e4233 !important;
 }
 
-/* Target direct blue text elements */
-h1[style*="color: rgb(37"],
-h1[style*="color: rgb(29"],
-h2[style*="color: rgb(37"],
-h2[style*="color: rgb(29"],
-span[style*="color: rgb(37"],
-span[style*="color: rgb(29"],
-div[style*="color: rgb(37"],
-div[style*="color: rgb(29"] {
-    color: #ffffff !important;
+/* Stats bar */
+.stats-bar,
+[class*="stats"] {
+    background-color: #19372b !important;
 }
 
-/* Elementor inline styles */
-.elementor-widget-heading [style*="color:"],
-.elementor-heading-title[style*="color:"] {
-    color: #ffffff !important;
+/* Footer */
+footer,
+.site-footer {
+    background: linear-gradient(to bottom right, #19372b, #1e4233, #19372b) !important;
 }
 
-/* Any h1 with className containing blue */
-h1[class*="blue"],
-h2[class*="blue"] {
-    color: #ffffff !important;
+/* All sections with blue backgrounds */
+section[style*="background"],
+div[style*="background"] {
+    background-color: #faf8f5 !important;
+}
+
+/* Specific component overrides */
+.bg-gradient-to-br {
+    background: linear-gradient(to bottom right, #19372b, #2d674d) !important;
+}
+
+/* Button primary */
+.bg-forest-700,
+.bg-forest-800 {
+    background-color: #2d674d !important;
+}
+
+/* Gold accents */
+.text-gold-400,
+.text-gold-500,
+.bg-gold-500 {
+    background-color: #eca53f !important;
+    color: #eca53f !important;
 }
